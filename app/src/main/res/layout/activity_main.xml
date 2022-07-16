@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:background="@drawable/common"
+
+              android:layout_height="match_parent"
+              tools:context=".MainActivity"
+              android:orientation="vertical">
+
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="top"
+            android:text="Calorie Calculator "
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:maxLines="2"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/faster_one"
+            android:paddingTop="10dp"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/iceland"
+                android:text="Age     "
+                android:textSize="35dp"
+                android:paddingTop="20dp"
+                android:textStyle="bold"
+        />
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/age"
+                android:inputType="number"
+                android:hint="Enter Age"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:fontFamily="@font/iceland"
+                android:textSize="25dp"
+                android:padding="20dp"
+                android:paddingLeft="20sp"
+                android:maxLength="2"/>
+
+    </LinearLayout>
+
+    <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/gender"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/iceland"
+                android:text="Gender"
+                android:textSize="35dp"
+                android:paddingTop="20dp"
+                android:textStyle="bold"/>
+
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/male"
+                android:text="male"
+                android:textSize="25sp"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="@font/iceland" />
+
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/female"
+                android:text="female"
+                android:textSize="25sp"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="40dp"
+                android:fontFamily="@font/iceland"/>
+
+    </RadioGroup>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/iceland"
+                android:text="Height "
+                android:textSize="35dp"
+                android:paddingTop="20dp"
+                android:textStyle="bold"/>
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/height"
+                android:inputType="number"
+                android:hint="cm"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:fontFamily="@font/iceland"
+                android:textSize="25dp"
+                android:padding="20dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/iceland"
+                android:text="Weight"
+                android:textSize="35dp"
+                android:paddingTop="20dp"
+                android:textStyle="bold" />
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/weight"
+                android:hint="Kilos"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:fontFamily="@font/iceland"
+                android:textSize="25dp"
+                android:padding="20dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="60dp"
+            android:orientation="horizontal"
+    android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/calculate"
+                android:layout_width="170dp"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:onClick="submit"
+                android:text="Calculate"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:background="@drawable/mybutton"
+                android:fontFamily="@font/iceland"
+                android:textStyle="bold"
+                android:elevation="5dp"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
